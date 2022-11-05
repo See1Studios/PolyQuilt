@@ -383,7 +383,7 @@ class QMeshOperators :
                     if v0 in new_face.verts and v1 in new_face.verts :
                         return bmesh.utils.face_split( new_face , v0  , v1 )
             
-        return bmesh.utils.face_split( face , v0  , v1 , coords = coords , use_exist = use_exist )
+        return bmesh.utils.face_split( face , v0 , v1 )
 
     def __calc_split_fac( self , edge , refPos ) :
         fac = 0.5
